@@ -1,6 +1,8 @@
-import { List, ListItem, Stack, Text } from "@chakra-ui/react";
+import { Box, List, ListItem, Stack, Text } from "@chakra-ui/react";
+import Image from "next/image";
 import type { FC } from "react";
 import { theme } from "../../theme/theme";
+import classes from "./style.module.css";
 
 type Props = {
     features: string[];
@@ -20,16 +22,30 @@ export const AboutMe: FC<Props> = (props) => {
         <Stack
             direction="column"
             p={4}
-            backgroundColor={theme.colors.purple[100]}
+            backgroundColor={theme.colors.purple[50]}
             borderRadius={"16px"}
+            borderColor={theme.colors.purple[300]}
+            border="purple"
             mt="4"
         >
             <Text fontSize="xl" color={theme.colors.gray} fontWeight="bold">
-                WHO?
+                pte
             </Text>
-            <List listStyleType="initial" pl="8">
-                {featuresChildren}
-            </List>
+            <Box display="flex">
+                <Box>
+                    <Image
+                        src="/patchouli.jpg"
+                        alt="アイコン"
+                        width="100"
+                        height="100"
+                        className={classes.icon}
+                    />
+                </Box>
+
+                <List listStyleType="initial" pl="40px">
+                    {featuresChildren}
+                </List>
+            </Box>
         </Stack>
     );
 };
