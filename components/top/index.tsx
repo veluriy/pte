@@ -69,7 +69,7 @@ export const TopPagePresenter: FC = () => {
                             <Link href="https://github.com/ptlx">Github</Link>
                         </ListItem>
                         <ListItem>
-                            <Link href="https://https://twitter.com/plockedgirl.com/ptlx">
+                            <Link href="https://twitter.com/plockedgirl">
                                 Twitter
                             </Link>
                         </ListItem>
