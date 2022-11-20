@@ -34,7 +34,7 @@ export const AboutMe: FC<Props> = (props) => {
             <Box display="flex">
                 <Box>
                     <img
-                        src="/patchouli.jpg"
+                        src="patchouli.jpg"
                         alt="アイコン"
                         width="100"
                         height="100"
