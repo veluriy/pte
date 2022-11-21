@@ -1,17 +1,9 @@
 import type { FC } from "react";
 import { Header } from "../header";
-import {
-    Box,
-    Code,
-    Link,
-    List,
-    ListItem,
-    Stack,
-    Text,
-    theme
-} from "@chakra-ui/react";
+import { Box, Link, List, ListItem, Text, theme } from "@chakra-ui/react";
 import classes from "./style.module.css";
 import { AboutMe } from "./about";
+import { Item } from "./item";
 
 export const TopPagePresenter: FC = () => {
     return (
@@ -37,24 +29,16 @@ export const TopPagePresenter: FC = () => {
                     ]}
                 />
                 <Box my="16px" mx="32px">
-                    <Text color={theme.colors.purple[700]} fontSize="xl">
-                        最近は...
-                    </Text>
-                    <List mx="16px" my="8px">
-                        <ListItem>
-                            数学基礎論を少しやっています。あと有機化学はじめました。
-                        </ListItem>
-                    </List>
+                    <Item
+                        title="最近は..."
+                        body="数学基礎論を少しやっています。あと有機化学はじめました。"
+                    />
                 </Box>
                 <Box my="16px" mx="32px">
-                    <Text color={theme.colors.purple[700]} fontSize="xl">
-                        趣味について
-                    </Text>
-                    <List mx="16px" my="8px">
-                        <ListItem>
-                            筋トレが好きです。最近は運動がマイブーム。
-                        </ListItem>
-                    </List>
+                    <Item
+                        title="趣味について"
+                        body="筋トレが好きです。最近は運動がマイブーム。"
+                    />
                 </Box>
                 <Box m="16px">
                     <Text
