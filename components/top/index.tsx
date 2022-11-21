@@ -4,10 +4,12 @@ import { Box, Link, List, ListItem, Text, theme } from "@chakra-ui/react";
 import classes from "./style.module.css";
 import { AboutMe } from "./about";
 import { Item } from "./item";
+import { Head } from "../head";
 
 export const TopPagePresenter: FC = () => {
     return (
         <>
+            <Head title="pteのサイト" />
             {/*<Header />*/}
             <div className={classes.main}>
                 <Text
