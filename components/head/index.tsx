@@ -1,12 +1,13 @@
+import Head from "next/head";
 import { FC } from "react";
 
 type Props = {
     title: string;
 };
 
-export const Head: FC<Props> = (props) => {
+export const MyHead: FC<Props> = (props) => {
     return (
-        <head prefix="og: https://ogp.me/ns#">
+        <Head>
             <meta charSet="utf-8" />
             <meta name="description" content="pteのサイト" />
             <meta property="og:title" content={props.title} />
@@ -21,6 +22,6 @@ export const Head: FC<Props> = (props) => {
                 content="width=device-width, initial-scale=1.0"
             />
             <title>{props.title}</title>
-        </head>
+        </Head>
     );
 };

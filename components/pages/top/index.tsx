@@ -1,15 +1,15 @@
 import type { FC } from "react";
-import { Header } from "../header";
+import { Header } from "../../header";
 import { Box, Link, List, ListItem, Text, theme } from "@chakra-ui/react";
 import classes from "./style.module.css";
 import { AboutMe } from "./about";
 import { Item } from "./item";
-import { Head } from "../head";
+import { MyHead } from "../../head";
 
 export const TopPagePresenter: FC = () => {
     return (
         <>
-            <Head title="pteのサイト" />
+            <MyHead title="pteのサイト" />
             {/*<Header />*/}
             <div className={classes.main}>
                 <Text

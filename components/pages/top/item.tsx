@@ -1,6 +1,6 @@
 import { Box, List, ListItem, propNames, Text } from "@chakra-ui/react";
 import { FC } from "react";
-import { theme } from "../../theme/theme";
+import { theme } from "../../../theme/theme";
 
 type Props = {
     title: string;
