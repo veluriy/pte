@@ -25,7 +25,7 @@ export const TopPagePresenter: FC = () => {
                 <AboutMe
                     features={[
                         "19yo (2022/11)",
-                        "categorist (but...)",
+                        "studying mathematics",
                         "programmer",
                         "そろそろ日本語で書きますね"
                     ]}
