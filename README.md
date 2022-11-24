@@ -1,6 +1,6 @@
-## What
-my page
-<a href="https://ptlx.github.io/pte/">ここ</a>
+## Link
+
+<a href="https://ptlz.net">ここ</a>
 
 ## Usage
 
