@@ -1,8 +1,9 @@
-import { Box, List, ListItem, Stack, Text } from "@chakra-ui/react";
+import { Box, List, ListIcon, ListItem, Stack, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import type { FC } from "react";
 import { theme } from "../../../theme/theme";
 import classes from "./style.module.css";
+import { MdCheckCircle } from "react-icons/md";
 
 type Props = {
     features: string[];
@@ -11,7 +12,8 @@ type Props = {
 export const AboutMe: FC<Props> = (props) => {
     const featuresChildren = props.features.map((feature) => {
         return (
-            <ListItem key={feature}>
+            <ListItem key={feature} display="flex" alignItems="center">
+                <ListIcon as={MdCheckCircle} color="purple.700" />
                 <Text fontSize="md" color={theme.colors.purple[700]}>
                     {feature}
                 </Text>
@@ -42,9 +44,7 @@ export const AboutMe: FC<Props> = (props) => {
                     />
                 </Box>
 
-                <List listStyleType="initial" pl="40px">
-                    {featuresChildren}
-                </List>
+                <List pl="24px">{featuresChildren}</List>
             </Box>
         </Stack>
     );

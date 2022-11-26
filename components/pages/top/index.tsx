@@ -1,9 +1,19 @@
 import type { FC } from "react";
 import { Header } from "../../header";
-import { Box, Link, List, ListItem, Text, theme } from "@chakra-ui/react";
+import {
+    Box,
+    Link,
+    List,
+    ListIcon,
+    ListItem,
+    Text,
+    theme
+} from "@chakra-ui/react";
 import classes from "./style.module.css";
 import { AboutMe } from "./about";
 import { Item } from "./item";
+import { FiTwitter } from "react-icons/fi";
+import { FiGithub } from "react-icons/fi";
 import { MyHead } from "../../head";
 
 export const TopPagePresenter: FC = () => {
@@ -15,12 +25,11 @@ export const TopPagePresenter: FC = () => {
                 <Text
                     fontSize="3xl"
                     color={theme.colors.purple[800]}
-                    borderBottomColor={theme.colors.purple[300]}
-                    borderBottom="1px"
+                    opacity="80%"
+                    borderBottom={`solid 1px ${theme.colors.purple[400]}`}
                     pb="1"
-                    fontWeight="bold"
                 >
-                    TOP Page
+                    About Me
                 </Text>
                 <AboutMe
                     features={[
@@ -45,16 +54,19 @@ export const TopPagePresenter: FC = () => {
                 <Box m="16px">
                     <Text
                         color={theme.colors.purple[900]}
+                        opacity="80%"
                         fontSize="3xl"
-                        borderBottom="1px"
+                        borderBottom={`solid 1px ${theme.colors.purple[400]}`}
                     >
                         Links
                     </Text>
-                    <List mx="32px" my="8px" listStyleType="initial">
+                    <List mx="16px" my="8px">
                         <ListItem>
+                            <ListIcon as={FiGithub} />
                             <Link href="https://github.com/ptlx">Github</Link>
                         </ListItem>
                         <ListItem>
+                            <ListIcon as={FiTwitter} />
                             <Link href="https://twitter.com/plockedgirl">
                                 Twitter
                             </Link>
