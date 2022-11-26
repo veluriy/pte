@@ -26,7 +26,7 @@ export const TopPagePresenter: FC = () => {
                     fontSize="3xl"
                     color={theme.colors.purple[800]}
                     opacity="80%"
-                    borderBottom={`solid 1px ${theme.colors.purple[400]}`}
+                    borderBottom={`solid 1px ${theme.colors.purple[800]}77`}
                     pb="1"
                 >
                     About Me
@@ -56,7 +56,7 @@ export const TopPagePresenter: FC = () => {
                         color={theme.colors.purple[900]}
                         opacity="80%"
                         fontSize="3xl"
-                        borderBottom={`solid 1px ${theme.colors.purple[400]}`}
+                        borderBottom={`solid 1px ${theme.colors.purple[900]}77`}
                     >
                         Links
                     </Text>
