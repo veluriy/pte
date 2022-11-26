@@ -45,7 +45,7 @@ export const TopPagePresenter: FC = () => {
                     <Text
                         color={theme.colors.purple[900]}
                         fontSize="3xl"
-                        borderBottom="1px"
+                        borderBottom={`solid 1px ${theme.colors.purple[400]}`}
                     >
                         Links
                     </Text>
