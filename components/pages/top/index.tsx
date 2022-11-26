@@ -61,11 +61,11 @@ export const TopPagePresenter: FC = () => {
                         Links
                     </Text>
                     <List mx="16px" my="8px">
-                        <ListItem>
+                        <ListItem display="flex" alignItems="center">
                             <ListIcon as={FiGithub} />
                             <Link href="https://github.com/ptlx">Github</Link>
                         </ListItem>
-                        <ListItem>
+                        <ListItem display="flex" alignItems="center">
                             <ListIcon as={FiTwitter} />
                             <Link href="https://twitter.com/plockedgirl">
                                 Twitter

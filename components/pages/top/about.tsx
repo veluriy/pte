@@ -12,8 +12,8 @@ type Props = {
 export const AboutMe: FC<Props> = (props) => {
     const featuresChildren = props.features.map((feature) => {
         return (
-            <ListItem key={feature} display="flex" alignItems="center">
-                <ListIcon as={MdCheckCircle} color="purple.700" />
+            <ListItem key={feature} display="flex">
+                <ListIcon as={MdCheckCircle} color="purple.700" mt="4px" />
                 <Text fontSize="md" color={theme.colors.purple[700]}>
                     {feature}
                 </Text>
