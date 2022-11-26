@@ -15,12 +15,11 @@ export const TopPagePresenter: FC = () => {
                 <Text
                     fontSize="3xl"
                     color={theme.colors.purple[800]}
-                    borderBottomColor={theme.colors.purple[300]}
-                    borderBottom="1px"
+                    opacity="60%"
+                    borderBottom={`solid 1px ${theme.colors.purple[400]}`}
                     pb="1"
-                    fontWeight="bold"
                 >
-                    TOP Page
+                    About Me
                 </Text>
                 <AboutMe
                     features={[
