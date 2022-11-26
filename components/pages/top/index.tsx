@@ -15,7 +15,7 @@ export const TopPagePresenter: FC = () => {
                 <Text
                     fontSize="3xl"
                     color={theme.colors.purple[800]}
-                    opacity="60%"
+                    opacity="80%"
                     borderBottom={`solid 1px ${theme.colors.purple[400]}`}
                     pb="1"
                 >
@@ -44,6 +44,7 @@ export const TopPagePresenter: FC = () => {
                 <Box m="16px">
                     <Text
                         color={theme.colors.purple[900]}
+                        opacity="80%"
                         fontSize="3xl"
                         borderBottom={`solid 1px ${theme.colors.purple[400]}`}
                     >
