@@ -30,7 +30,11 @@ export const AboutMe: FC<Props> = (props) => {
             border="purple"
             mt="4"
         >
-            <Text fontSize="xl" color={theme.colors.gray} fontWeight="bold">
+            <Text
+                fontSize="xl"
+                color={theme.colors.purple[900]}
+                fontWeight="bold"
+            >
                 pte
             </Text>
             <Box display="flex">
