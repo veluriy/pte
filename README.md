@@ -1,19 +1,27 @@
 ## Link
 
-<a href="https://ptlz.net">ここ</a>
+<a href="https://ptlz.net">ptlz.net</a>
 
 ## Usage
 
-### init
+### initialization
 
-note: yarn is better
+note: yarn is better.
 
 ```bash
 yarn
 ```
 
+
 ### run
 
 ```bash
-yarn run dev
+yarn dev # dev mode
+```
+
+or
+
+```bash
+yarn build
+yarn start # production mode
 ```
