@@ -13,7 +13,7 @@ export const Item: FC<Props> = (props) => {
             <Text color={theme.colors.purple[700]} fontSize="xl">
                 {props.title}
             </Text>
-            <Box mx="16px" my="8px">
+            <Box mx="16px" my="8px" color={theme.colors.purple[900]}>
                 <Text>{props.body}</Text>
             </Box>
         </>

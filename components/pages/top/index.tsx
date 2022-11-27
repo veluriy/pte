@@ -62,12 +62,26 @@ export const TopPagePresenter: FC = () => {
                     </Text>
                     <List mx="16px" my="8px">
                         <ListItem display="flex" alignItems="center">
-                            <ListIcon as={FiGithub} />
-                            <Link href="https://github.com/ptlx">Github</Link>
+                            <ListIcon
+                                as={FiGithub}
+                                color={theme.colors.purple[900]}
+                            />
+                            <Link
+                                href="https://github.com/ptlx"
+                                color={theme.colors.purple[900]}
+                            >
+                                Github
+                            </Link>
                         </ListItem>
                         <ListItem display="flex" alignItems="center">
-                            <ListIcon as={FiTwitter} />
-                            <Link href="https://twitter.com/plockedgirl">
+                            <ListIcon
+                                as={FiTwitter}
+                                color={theme.colors.purple[900]}
+                            />
+                            <Link
+                                href="https://twitter.com/plockedgirl"
+                                color={theme.colors.purple[900]}
+                            >
                                 Twitter
                             </Link>
                         </ListItem>
