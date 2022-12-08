@@ -2,6 +2,7 @@ import type { FC } from "react";
 import { Header } from "../../header";
 import {
     Box,
+    Card,
     Link,
     List,
     ListIcon,
@@ -9,7 +10,6 @@ import {
     Text,
     theme
 } from "@chakra-ui/react";
-import classes from "./style.module.css";
 import { AboutMe } from "./about";
 import { Item } from "./item";
 import { FiTwitter } from "react-icons/fi";
@@ -21,7 +21,7 @@ export const TopPagePresenter: FC = () => {
         <>
             <MyHead title="pteのサイト" />
             {/*<Header />*/}
-            <div className={classes.main}>
+            <Card m="16px 16px 0">
                 <Text
                     fontSize="3xl"
                     color={theme.colors.purple[800]}
@@ -87,7 +87,7 @@ export const TopPagePresenter: FC = () => {
                         </ListItem>
                     </List>
                 </Box>
-            </div>
+            </Card>
         </>
     );
 };
