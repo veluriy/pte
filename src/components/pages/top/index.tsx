@@ -21,7 +21,7 @@ export const TopPagePresenter: FC = () => {
         <>
             <MyHead title="pteのサイト" />
             {/*<Header />*/}
-            <Card m="16px 16px 0">
+            <Card m="16px 16px 0" boxShadow="none">
                 <Text
                     fontSize="3xl"
                     color={theme.colors.purple[800]}
@@ -39,16 +39,16 @@ export const TopPagePresenter: FC = () => {
                         "そろそろ日本語で書きますね"
                     ]}
                 />
-                <Box my="16px" mx="32px">
+                <Box mt="16px" mx="32px">
                     <Item
                         title="最近は..."
-                        body="数学基礎論を少しやっています。あと有機化学はじめました。"
+                        body="最近は主に有機化学を学んでいます。あと日記帳の実装も。"
                     />
                 </Box>
-                <Box my="16px" mx="32px">
+                <Box mt="16px" mx="32px">
                     <Item
                         title="趣味について"
-                        body="筋トレが好きです。最近は運動がマイブーム。"
+                        body="息抜きに筋トレをすることが増えました。"
                     />
                 </Box>
                 <Box m="16px">
