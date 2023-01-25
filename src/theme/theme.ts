@@ -14,7 +14,7 @@ export const theme = extendTheme({
         }
     },
     fonts: {
-        heading: `"Avenir", "Corbel", "BIZ UDGothic", sans-serif`,
-        body: `"Avenir", "Corbel", "BIZ UDGothic", sans-serif`
+        heading: `"Zen Kaku Gothic New", "Avenir", "Corbel", "BIZ UDGothic", sans-serif`,
+        body: `"Zen Kaku Gothic New", "Avenir", "Corbel", "BIZ UDGothic", sans-serif`
     }
 });
