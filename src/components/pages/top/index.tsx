@@ -79,7 +79,7 @@ export const TopPagePresenter: FC = () => {
                                 color={theme.colors.purple[900]}
                             />
                             <Link
-                                href="https://twitter.com/plockedgirl"
+                                href="https://twitter.com/suanla"
                                 color={theme.colors.purple[900]}
                             >
                                 Twitter
