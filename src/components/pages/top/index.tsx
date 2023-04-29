@@ -15,8 +15,18 @@ import { Item } from "./item";
 import { FiTwitter } from "react-icons/fi";
 import { FiGithub } from "react-icons/fi";
 import { MyHead } from "../../head";
+import { TopPageContentType } from "../../../types/top";
 
-export const TopPagePresenter: FC = () => {
+type Props = {
+    contents: TopPageContentType;
+};
+
+export const TopPagePresenter: FC<Props> = (props: Props) => {
+    const About = props.contents.about.map((about) => (
+        <Box mt="16px" mx="32px" key={about.title}>
+            <Item title={about.title} body={about.content} />
+        </Box>
+    ));
     return (
         <>
             <MyHead title="pteのサイト" />
@@ -31,26 +41,8 @@ export const TopPagePresenter: FC = () => {
                 >
                     About Me
                 </Text>
-                <AboutMe
-                    features={[
-                        "19yo (2022/11)",
-                        "studying mathematics",
-                        "programmer",
-                        "そろそろ日本語で書きますね"
-                    ]}
-                />
-                <Box mt="16px" mx="32px">
-                    <Item
-                        title="最近は..."
-                        body="最近は主に有機化学を学んでいます。あと日記帳の実装も。"
-                    />
-                </Box>
-                <Box mt="16px" mx="32px">
-                    <Item
-                        title="趣味について"
-                        body="息抜きに筋トレをすることが増えました。"
-                    />
-                </Box>
+                <AboutMe features={props.contents.features} />
+                {About}
                 <Box m="16px">
                     <Text
                         color={theme.colors.purple[900]}
